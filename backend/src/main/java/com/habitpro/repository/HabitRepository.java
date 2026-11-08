@@ -1,0 +1,1 @@
+package com.habitpro.repository;import com.habitpro.model.Habit;import org.springframework.data.mongodb.repository.MongoRepository;import java.util.*;public interface HabitRepository extends MongoRepository<Habit,String>{List<Habit> findByUserId(String userId);Optional<Habit> findByIdAndUserId(String id,String userId);}
