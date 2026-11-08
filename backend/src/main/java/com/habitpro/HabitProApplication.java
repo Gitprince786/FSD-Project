@@ -1,0 +1,1 @@
+package com.habitpro; import org.springframework.boot.SpringApplication;import org.springframework.boot.autoconfigure.SpringBootApplication;@SpringBootApplication public class HabitProApplication{public static void main(String[]args){SpringApplication.run(HabitProApplication.class,args);}}
