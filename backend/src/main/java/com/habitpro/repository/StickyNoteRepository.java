@@ -1,1 +1,0 @@
-package com.habitpro.repository;import com.habitpro.model.StickyNote;import org.springframework.data.mongodb.repository.MongoRepository;import java.util.*;public interface StickyNoteRepository extends MongoRepository<StickyNote,String>{List<StickyNote> findByUserIdOrderByPinnedDescCreatedAtDesc(String userId);Optional<StickyNote> findByIdAndUserId(String id,String userId);}
